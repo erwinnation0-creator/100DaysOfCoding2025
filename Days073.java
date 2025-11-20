@@ -1,0 +1,25 @@
+package Days;
+
+import java.util.Scanner;
+
+public class Days073 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int angka;
+        int total = 0;
+
+        while (true) {
+            System.out.print("Masukkan angka (negatif untuk berhenti): ");
+            angka = input.nextInt();
+
+            if (angka < 0) {
+                break;
+            }
+
+            total += angka;
+        }
+
+        System.out.println("Total penjumlahan: " + total);
+    }
+}
